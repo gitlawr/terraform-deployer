@@ -29,7 +29,7 @@ RUN KUBECTL_VER="v1.25.5"; \
     ln -s /usr/bin/kubectl /usr/bin/k
 
 # get terraform
-RUN TF_VER="1.4.5"; \
+RUN TF_VER="1.5.7"; \
     curl -sfL https://releases.hashicorp.com/terraform/${TF_VER}/terraform_${TF_VER}_linux_${TARGETARCH}.zip -o /tmp/terraform.zip && \
     unzip /tmp/terraform.zip -d /usr/bin/ && \
     ln -s /usr/bin/terraform /usr/bin/tf; \
